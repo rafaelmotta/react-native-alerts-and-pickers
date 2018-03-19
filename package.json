@@ -1,0 +1,46 @@
+{
+  "name": "react-native-alerts",
+  "version": "0.1.0",
+  "description": "A cross-platform ActionSheet for React Native",
+  "author": "Rafael Michels Motta <rafaelmotta021@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelmotta/react-native-alerts/issues"
+  },
+  "homepage": "https://github.com/rafaelmotta/react-native-alerts",
+  "main": "index.js",
+  "private": true,
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^23.0.0-alpha.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "eslint": "^4.19.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.4.2",
+    "jest-expo": "25.0.0",
+    "jest-serializer-enzyme": "^1.0.0",
+    "react": "16.2.0",
+    "react-native-mock": "^0.3.1",
+    "react-native-scripts": "1.11.1",
+    "react-test-renderer": "16.2.0"
+  },
+  "scripts": {
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node node_modules/jest/bin/jest.js --coverage",
+    "lint": "./node_modules/.bin/eslint . --fix; exit 0"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1"
+  }
+}
