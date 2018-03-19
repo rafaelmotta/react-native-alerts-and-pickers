@@ -21,7 +21,11 @@ class ActionSheet extends React.Component {
     children: PropTypes.node,
 
     show: PropTypes.bool,
+
+    // Indicate if when user press in the overlay, can request to close
     cancellable: PropTypes.bool,
+
+    // User is requesting to close
     onRequestClose: PropTypes.func.isRequired,
 
     // Animation
@@ -149,11 +153,11 @@ const styles = StyleSheet.create({
   inner: {
     ...StyleSheet.absoluteFillObject,
     justifyContent: 'flex-end',
-    padding: 12.5
+    padding: theme.containerPadding
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(0, 0, 0, 0.35)',
+    backgroundColor: theme.overlayBackgroundColor,
     justifyContent: 'center',
     zIndex: 100
   },

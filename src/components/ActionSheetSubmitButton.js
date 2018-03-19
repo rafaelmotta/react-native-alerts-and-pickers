@@ -5,7 +5,7 @@ import {
   ViewPropTypes,
   Text,
   StyleSheet,
-  TouchableOpacity
+  TouchableHighlight
 } from 'react-native'
 
 import theme from '../config/theme'
@@ -30,7 +30,12 @@ ActionSheetSubmitButton.defaultProps = {
 function ActionSheetSubmitButton (props) {
   return (
     <View>
-      <TouchableOpacity activeOpacity={0.8} onPress={props.onPress}>
+      <TouchableHighlight
+        activeOpacity={0.9}
+        underlayColor="transparent"
+        onPress={props.onPress}
+        onLongPress={props.onLongPress}
+      >
         <View
           style={[
             styles.container,
@@ -47,7 +52,7 @@ function ActionSheetSubmitButton (props) {
             {props.label}
           </Text>
         </View>
-      </TouchableOpacity>
+      </TouchableHighlight>
     </View>
   )
 }
@@ -56,7 +61,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: theme.baseBackgroundColor,
     borderRadius: theme.baseBorderRadius,
-    height: 55,
+    height: theme.defaultItemHeight,
     alignItems: 'center',
     justifyContent: 'center'
   },

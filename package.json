@@ -1,13 +1,13 @@
 {
-  "name": "react-native-alerts",
+  "name": "react-native-alerts-and-pickers",
   "version": "0.1.0",
-  "description": "A cross-platform ActionSheet for React Native",
+  "description": "Powerful alerts for React Native projects",
   "author": "Rafael Michels Motta <rafaelmotta021@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rafaelmotta/react-native-alerts/issues"
+    "url": "https://github.com/rafaelmotta/react-native-alerts-and-pickers/issues"
   },
-  "homepage": "https://github.com/rafaelmotta/react-native-alerts",
+  "homepage": "https://github.com/rafaelmotta/react-native-alerts-and-pickers",
   "main": "index.js",
   "private": true,
   "devDependencies": {

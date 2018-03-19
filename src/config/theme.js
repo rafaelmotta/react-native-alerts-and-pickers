@@ -18,6 +18,10 @@ export default {
     return '#FFFFFF'
   },
 
+  get overlayBackgroundColor () {
+    return 'rgba(0, 0, 0, 0.4)'
+  },
+
   get baseBorderColor () {
     return '#D1D3CE'
   },
@@ -27,7 +31,7 @@ export default {
   },
 
   get baseBorderRadius () {
-    return 12.5
+    return 14
   },
 
   get gutter () {
@@ -50,9 +54,16 @@ export default {
     return 12
   },
 
-  // Action Sheet Title
+  get containerPadding () {
+    return 10
+  },
+
   get titleColor () {
     return '#A9A9A9'
+  },
+
+  get defaultItemHeight () {
+    return 57
   },
 
   // Animations

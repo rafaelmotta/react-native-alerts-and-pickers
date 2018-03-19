@@ -5,7 +5,7 @@ import {
   ViewPropTypes,
   Text,
   StyleSheet,
-  TouchableOpacity
+  TouchableHighlight
 } from 'react-native'
 
 import theme from '../config/theme'
@@ -21,6 +21,7 @@ ActionSheetItem.propTypes = {
   onLongPress: PropTypes.func,
 
   // Styles
+  first: PropTypes.bool,
   last: PropTypes.bool,
   align: PropTypes.oneOf([
     'flex-start',
@@ -47,6 +48,7 @@ ActionSheetItem.defaultProps = {
   onLongPress: null,
 
   // Styles
+  first: false,
   last: false,
   destructive: false,
   align: 'center',
@@ -60,8 +62,9 @@ ActionSheetItem.defaultProps = {
 function ActionSheetItem (props) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        activeOpacity={0.2}
+      <TouchableHighlight
+        activeOpacity={0.9}
+        underlayColor="transparent"
         onPress={props.onPress}
         onLongPress={props.onLongPress}
       >
@@ -70,6 +73,8 @@ function ActionSheetItem (props) {
             styles.inner,
             { justifyContent: props.align },
             props.innerStyle,
+            props.first && styles.innerFirst,
+            props.last && styles.innerLast,
             !props.last && styles.innerNotLast
           ]}
         >
@@ -106,7 +111,7 @@ function ActionSheetItem (props) {
             )}
           </View>
         </View>
-      </TouchableOpacity>
+      </TouchableHighlight>
     </View>
   )
 }
@@ -116,20 +121,29 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   inner: {
+    backgroundColor: theme.baseBackgroundColor,
     flexDirection: 'row',
-    height: 55,
+    height: theme.defaultItemHeight,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  innerFirst: {
+    borderTopRightRadius: theme.baseBorderRadius,
+    borderTopLeftRadius: theme.baseBorderRadius
+  },
+  innerLast: {
+    borderBottomRightRadius: theme.baseBorderRadius,
+    borderBottomLeftRadius: theme.baseBorderRadius
+  },
+  innerNotLast: {
+    borderBottomWidth: theme.baseBorderWidth,
+    borderBottomColor: theme.baseBorderColor
   },
   iconContainer: {
     marginHorizontal: theme.gutter,
     alignItems: 'center',
     justifyContent: 'center',
     top: theme.gutter / 5
-  },
-  innerNotLast: {
-    borderBottomWidth: theme.baseBorderWidth,
-    borderBottomColor: theme.baseBorderColor
   },
   textContainer: {
     alignItems: 'center',
@@ -142,7 +156,7 @@ const styles = StyleSheet.create({
   titleTextWithSubtitle: {
     fontSize: theme.mediumFontSize,
     fontWeight: '400',
-    marginBottom: 3
+    marginBottom: theme.gutter / 5
   },
   subtitleText: {
     fontSize: theme.smallFontSize
