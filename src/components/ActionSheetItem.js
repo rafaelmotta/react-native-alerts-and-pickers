@@ -125,7 +125,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: theme.defaultItemHeight,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    paddingHorizontal: theme.gutter
   },
   innerFirst: {
     borderTopRightRadius: theme.baseBorderRadius,
@@ -140,14 +141,19 @@ const styles = StyleSheet.create({
     borderBottomColor: theme.baseBorderColor
   },
   iconContainer: {
-    marginHorizontal: theme.gutter,
     alignItems: 'center',
     justifyContent: 'center',
-    top: theme.gutter / 5
+    top: theme.gutter / 5,
+    marginRight: theme.gutter
   },
   textContainer: {
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  textContainerWithIcon: {
+    position: 'absolute',
+    left: 55,
+    alignItems: 'center'
   },
   titleText: {
     fontSize: theme.largeFontSize,
