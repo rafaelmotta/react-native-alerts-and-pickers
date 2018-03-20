@@ -7,18 +7,18 @@
 A pure javascript implementation for Alerts and Pickers. Our goal is to have a high customizable package working for iOS and Android Platforms, reaching the features of the awesome package https://github.com/dillidon/alerts-and-pickers and https://github.com/skywinder/ActionSheetPicker-3.0
 
 ## Road Map
-- [x] iOS Implementation (in progress)
-- [] Android (Material) Implementation
-- [] Alert Color Picker
-- [] Alert Contacts
-- [] Alert Country Picker
-- [] Alert Country Phone Picker
-- [] Alert Emoji Picker
-- [] Alert Image picker
-- [] Alert Maps
-- [] Alert Text
-- [] Alert DatePicker
-- [] Alert TimePicker
+[x] iOS Implementation (in progress)
+[] Android (Material) Implementation
+[] Alert Color Picker
+[] Alert Contacts
+[] Alert Country Picker
+[] Alert Country Phone Picker
+[] Alert Emoji Picker
+[] Alert Image picker
+[] Alert Maps
+[] Alert Text
+[] Alert DatePicker
+[] Alert TimePicker
 
 ## Features
 
@@ -33,7 +33,7 @@ You can try on expo: https://exp.host/@rafaelmotta021/eact-native-alerts-and-pic
 or just check the image bellow:
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/rafaelmotta/eact-native-alerts-and-pickers/master/demo-example.gif" height="550" />
+<img src="https://raw.githubusercontent.com/rafaelmotta/react-native-alerts-and-pickers/master/demo-example.gif" height="550" />
 </p>
 
 ## Setup
