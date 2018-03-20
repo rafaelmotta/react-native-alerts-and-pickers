@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/rafaelmotta/react-native-alerts-and-pickers",
   "main": "index.js",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "babel-jest": "^23.0.0-alpha.0",
