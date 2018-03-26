@@ -1,4 +1,4 @@
-# react-native-alerts-and-pickers
+### react-native-alerts-and-pickers
 
 [![npm version](https://badge.fury.io/js/eact-native-alerts-and-pickers.svg)](https://badge.fury.io/js/eact-native-alerts-and-pickers)
 
