@@ -104,7 +104,8 @@ class ActionSheet extends React.Component {
       const options = {
         toValue: this.state.show ? 0 : 1,
         duration: this.props.slideAnimationDuration,
-        animation: theme.translateEasing
+        animation: theme.translateEasing,
+        useNativeDriver: true
       }
 
       Animated.timing(
